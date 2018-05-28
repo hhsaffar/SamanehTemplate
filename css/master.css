@@ -1,7 +1,44 @@
+@font-face {
+    font-family: Parastoo;
+    src: url('../fonts/Parastoo.eot');
+    src: url('../fonts/Parastoo.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Parastoo.woff') format('woff'),
+         url('../fonts/Parastoo.ttf') format('truetype');
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: Parastoo;
+    src: url('../fonts/Parastoo-Bold.eot');
+    src: url('../fonts/Parastoo-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Parastoo-Bold.woff') format('woff'),
+         url('../fonts/Parastoo-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Nazli;
+    /*src: url('../fonts/Parastoo.eot');*/
+    src: /*url('../fonts/Parastoo.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Parastoo.woff') format('woff'),*/
+         url('../fonts/nazli/nazli.ttf') format('truetype');
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: Nazli;
+    /*src: url('../fonts/Parastoo-Bold.eot');*/
+    src: /*url('../fonts/Parastoo-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Parastoo-Bold.woff') format('woff'),*/
+         url('../fonts/nazli/nazlib.ttf') format('truetype');
+    font-weight: bold;
+}
+
 body{
     direction:rtl;
     margin: 0;
     padding: 0;
+    font-family: Nazli;
 }
 
 .top-bar{
@@ -31,14 +68,14 @@ body{
 
 .banner{
     background-color:green;
-    margin-left: 30px;
-    font-size:;
+    /* margin-left: 30px; */
+    /*font-size:40px;*/
 }
 
 .site-title{
     margin-right:30px;
-    margin-bottom:10px;
-    margin 15px 30px 10px 0px;
+    /* margin-bottom:10px; */
+    margin: 0px 30px 10px 0px;
     font-size:40px;
 }
 
@@ -53,6 +90,11 @@ body{
     background-color:blue;
     margin:5px 30px 5px 20px;
     float:right;
+    padding: 4px 5px 2px 2px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
 .bread-crumb{
@@ -71,4 +113,41 @@ body{
 .bread-crumb-separator{
     margin: 0px 10px 0 10px;
     font-weight: bold;
+}
+
+.menu-maker{
+    width: 25px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 3px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 5px 30px 5px 5px;
+    width: 100%;
+    text-align: right;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 10 18px;
+    background-color: #E91E63;
+    display: none;
+    overflow: hidden;
+}
+
+.operations{
+    padding: 10px 18px;
 }

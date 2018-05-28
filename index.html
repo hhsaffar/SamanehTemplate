@@ -1,38 +1,338 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="./css/master.css">
-    </head>
-    <body>
-        <div id="top-bar" class="top-bar">
-            
+
+<head>
+    <link rel="stylesheet" href="./css/master.css">
+    <script src="./js/master-page.js"></script>
+</head>
+
+<body>
+    <div id="top-bar" class="top-bar">
+
+    </div>
+    <div id="container" class="container">
+        <div id="header" class="header">
+            <div id="user-info" class="user-info">
+                سهراب سعیدی
+            </div>
+            <div id="banner" class="banner">
+
+                <div id="site-title" class="site-title">سامانه تجمیع هزینه</div>
+                <div id="site-sub-title" class="site-subtitle">سازمان فرهنگی هنری شهرداری تهران</div>
+
+
+            </div>
+
+            <div id="quick-menu" class="quick-menu">
+                &#9776;
+            </div>
+            <div id="bread-crumb" class="bread-crumb">
+                <span class="bread-crumb-node">صفحه اصلی </span>
+                <span class="bread-crumb-separator"> > </span>
+                <span class="bread-crumb-node">هزینه‌های برنامه‌ای </span>
+                <span class="bread-crumb-separator"> > </span>
+                <span class="bread-crumb-node">برنامه چهارشنبه با کتاب</span>
+                <span class="bread-crumb-separator"> > </span>
+                <span class="bread-crumb-node">سند قشنگ (۱۰۱۱۰۱۹۷۱۰۰۰۴)</span>
+            </div>
+            <div id="top-menu" class="top-menu"></div>
         </div>
-        <div id="container" class="container">
-            <div id="header" class="header">
-                    <div id="user-info" class="user-info">
-                            سهراب سعیدی
-                    </div>
-                <div id="banner" class="banner">
-                    
-                    <div id="site-title" class="site-title">سامانه تجمیع هزینه</div>  
-                    <div id="site-sub-title" class="site-subtitle">سازمان فرهنگی هنری شهرداری تهران</div>  
-                        
-                        
+        <div id="content" class="content">
+            <div id="filter" class="filter">
+                <button class="accordion">فیلترها</button>
+                <div class="panel">
+                    <label for="">عنوان هزینه</label>
+                    <input type="text" />
+                    <label for="">قلم هزینه</label>
+                    <input type="text">
+                    <input type="button" value="به روز رسانی" text="sf" />
                 </div>
-                 
-                <div id="quick-menu" class="quick-menu"></div>
-                <div id="bread-crumb" class="bread-crumb">
-                    <span class="bread-crumb-node">صفحه اصلی </span>
-                    <span class="bread-crumb-separator"> > </span>
-                    <span class="bread-crumb-node">هزینه‌های برنامه‌ای </span>
-                    <span class="bread-crumb-separator"> > </span>
-                    <span class="bread-crumb-node">برنامه چهارشنبه با کتاب</span>
-                    <span class="bread-crumb-separator"> > </span>
-                    <span class="bread-crumb-node">سند قشنگ (۱۰۱۱۰۱۹۷۱۰۰۰۴)</span>
-                </div>
-                <div id="top-menu" class="top-menu"></div>
-            </div> 
-            <div id="content" class="content"></div>
+            </div>
+            <div id="operations" class="operations">
+                <input type="button" value="وارد کردن قلم هزینه فاکتوری">
+                <input type="button" value="وارد کردن قلم هزینه قراردادی">
+                <input type="button" value="ارسال به عامل مالی">
+            </div>
+            <div id="data-table-div" class="data-table-div">
+                <table>
+                    <tr>
+                        <td>عنوان</td>
+                        <td>نوع هزینه</td>
+                        <td>قلم هزینه</td>
+                        <td>کد قلم هزینه</td>
+                        <td>شماره فاکتور</td>
+                        <td>شماره قرارداد</td>
+                        <td>هزینه</td>
+                        <td>مالیات بر ارزش افزوده</td>
+                        <td>ناخالص</td>
+                        <td>مبلغ مالیات</td>
+                        <td>سپرده بیمه</td>
+                        <td>سپرده حسن انجام کار</td>
+                        <td>سایر کسورات</td>
+                        <td>خالص پرداختی</td>
+                        <td>وضعیت</td>
+                        <td>عملیات</td>
+                    </tr>
+                    <tr>
+                        <td>ماشینهای اداری بابت تعمیر پرینتر</td>
+                        <td>فاکتوری</td>
+                        <td>تعمیرات</td>
+                        <td>8180</td>
+                        <td>112200</td>
+                        <td></td>
+                        <td>11081</td>
+                        <td>70000000</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>700000000</td>
+                        <td>در حال تنظیم</td><td>ویرایش حذف</td>
+                    </tr>
+                    <tr>
+                        <td>ماشینهای اداری بابت تعمیر پرینتر</td>
+                        <td>فاکتوری</td>
+                        <td>تعمیرات</td>
+                        <td>8180</td>
+                        <td>112200</td>
+                        <td></td>
+                        <td>11081</td>
+                        <td>70000000</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>700000000</td>
+                        <td>در حال تنظیم</td><td>ویرایش حذف</td>
+                    </tr>
+                    <tr>
+                        <td>ماشینهای اداری بابت تعمیر پرینتر</td>
+                        <td>فاکتوری</td>
+                        <td>تعمیرات</td>
+                        <td>8180</td>
+                        <td>112200</td>
+                        <td></td>
+                        <td>11081</td>
+                        <td>70000000</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>700000000</td>
+                        <td>در حال تنظیم</td><td>ویرایش حذف</td>
+                    </tr>
+                    <tr>
+                        <td>ماشینهای اداری بابت تعمیر پرینتر</td>
+                        <td>فاکتوری</td>
+                        <td>تعمیرات</td>
+                        <td>8180</td>
+                        <td>112200</td>
+                        <td></td>
+                        <td>11081</td>
+                        <td>70000000</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>700000000</td>
+                        <td>در حال تنظیم</td><td>ویرایش حذف</td>
+                    </tr>
+                    <tr>
+                        <td>ماشینهای اداری بابت تعمیر پرینتر</td>
+                        <td>فاکتوری</td>
+                        <td>تعمیرات</td>
+                        <td>8180</td>
+                        <td>112200</td>
+                        <td></td>
+                        <td>11081</td>
+                        <td>70000000</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>700000000</td>
+                        <td>در حال تنظیم</td><td>ویرایش حذف</td>
+                    </tr>
+                    <tr>
+                        <td>ماشینهای اداری بابت تعمیر پرینتر</td>
+                        <td>فاکتوری</td>
+                        <td>تعمیرات</td>
+                        <td>8180</td>
+                        <td>112200</td>
+                        <td></td>
+                        <td>11081</td>
+                        <td>70000000</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>700000000</td>
+                        <td>در حال تنظیم</td><td>ویرایش حذف</td>
+                    </tr>
+                    <tr>
+                        <td>ماشینهای اداری بابت تعمیر پرینتر</td>
+                        <td>فاکتوری</td>
+                        <td>تعمیرات</td>
+                        <td>8180</td>
+                        <td>112200</td>
+                        <td></td>
+                        <td>11081</td>
+                        <td>70000000</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>700000000</td>
+                        <td>در حال تنظیم</td><td>ویرایش حذف</td>
+                    </tr>
+                    <tr>
+                        <td>ماشینهای اداری بابت تعمیر پرینتر</td>
+                        <td>فاکتوری</td>
+                        <td>تعمیرات</td>
+                        <td>8180</td>
+                        <td>112200</td>
+                        <td></td>
+                        <td>11081</td>
+                        <td>70000000</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>700000000</td>
+                        <td>در حال تنظیم</td><td>ویرایش حذف</td>
+                    </tr>
+                    <tr>
+                        <td>ماشینهای اداری بابت تعمیر پرینتر</td>
+                        <td>فاکتوری</td>
+                        <td>تعمیرات</td>
+                        <td>8180</td>
+                        <td>112200</td>
+                        <td></td>
+                        <td>11081</td>
+                        <td>70000000</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>700000000</td>
+                        <td>در حال تنظیم</td><td>ویرایش حذف</td>
+                    </tr>
+                    <tr>
+                        <td>ماشینهای اداری بابت تعمیر پرینتر</td>
+                        <td>فاکتوری</td>
+                        <td>تعمیرات</td>
+                        <td>8180</td>
+                        <td>112200</td>
+                        <td></td>
+                        <td>11081</td>
+                        <td>70000000</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>700000000</td>
+                        <td>در حال تنظیم</td><td>ویرایش حذف</td>
+                    </tr>
+                    <tr>
+                        <td>ماشینهای اداری بابت تعمیر پرینتر</td>
+                        <td>فاکتوری</td>
+                        <td>تعمیرات</td>
+                        <td>8180</td>
+                        <td>112200</td>
+                        <td></td>
+                        <td>11081</td>
+                        <td>70000000</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>700000000</td>
+                        <td>در حال تنظیم</td><td>ویرایش حذف</td>
+                    </tr>
+                    <tr>
+                        <td>ماشینهای اداری بابت تعمیر پرینتر</td>
+                        <td>فاکتوری</td>
+                        <td>تعمیرات</td>
+                        <td>8180</td>
+                        <td>112200</td>
+                        <td></td>
+                        <td>11081</td>
+                        <td>70000000</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>700000000</td>
+                        <td>در حال تنظیم</td><td>ویرایش حذف</td>
+                    </tr>
+                    <tr>
+                        <td>ماشینهای اداری بابت تعمیر پرینتر</td>
+                        <td>فاکتوری</td>
+                        <td>تعمیرات</td>
+                        <td>8180</td>
+                        <td>112200</td>
+                        <td></td>
+                        <td>11081</td>
+                        <td>70000000</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>700000000</td>
+                        <td>در حال تنظیم</td><td>ویرایش حذف</td>
+                    </tr>
+                    <tr>
+                        <td>ماشینهای اداری بابت تعمیر پرینتر</td>
+                        <td>فاکتوری</td>
+                        <td>تعمیرات</td>
+                        <td>8180</td>
+                        <td>112200</td>
+                        <td></td>
+                        <td>11081</td>
+                        <td>70000000</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>700000000</td>
+                        <td>در حال تنظیم</td><td>ویرایش حذف</td>
+                    </tr>
+                    <tr>
+                        <td>ماشینهای اداری بابت تعمیر پرینتر</td>
+                        <td>فاکتوری</td>
+                        <td>تعمیرات</td>
+                        <td>8180</td>
+                        <td>112200</td>
+                        <td></td>
+                        <td>11081</td>
+                        <td>70000000</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>700000000</td>
+                        <td>در حال تنظیم</td><td>ویرایش حذف</td>
+                    </tr>
+                </table>
+
+            </div>
         </div>
-        
-    </body>
+    </div>
+    <script>initAccordion();</script>
+</body>
+
 </html>
